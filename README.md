@@ -1,4 +1,4 @@
-# Welcome to the Craft 4 with Vite.
+# Welcome to the Craft 5 with Vite.
 
 # Table of Contents
 ---
@@ -19,7 +19,7 @@
 # Tools & Frontend Assets
 ---
 ## What's included:
-* Craft CMS v4 - Craft is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond. [Documentation](https://craftcms.com/docs/4.x/)
+* Craft CMS v5 - Craft is a flexible, user-friendly CMS for creating custom digital experiences on the web and beyond. [Documentation](https://craftcms.com/docs/5.x/)
 * Vite - [Documentation](https://vitejs.dev/)
 
 ## Frontend assets:
