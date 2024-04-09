@@ -1,0 +1,49 @@
+@layer base {
+
+    html {
+        @apply
+        antialiased
+        font-body
+        text-black;
+    }
+
+    ::selection {
+        @apply
+        bg-primary-500
+        bg-opacity-30
+        text-black;
+    }
+
+    // normalize placeholder
+    input::placeholder,
+    textarea::placeholder {
+        opacity: 1;
+    }
+
+    button:focus {
+        @apply
+        outline-none
+        ring;
+    }
+
+    img,
+    svg {
+        @apply
+        max-w-full
+        h-auto;
+    }
+
+}
+
+// Hide Alpine.js components that are hidden by default
+[x-cloak=""] { 
+    @apply
+    hidden #{!important};
+}
+
+@screen mobile-nav-max {
+	[x-cloak="mobile"] {
+        @apply
+        hidden #{!important};
+	}
+}

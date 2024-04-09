@@ -1,0 +1,35 @@
+# System Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dotenv
+/.env
+
+# Composer
+vendor
+!src/**/vendor
+
+# Craft CMS
+web/cpresources
+
+# npm
+node_modules
+
+# temporary build files
+.tmp
+src/scss/.tmp
+web/hot
+
+# Ignore frontend files that are part of `gulp build` process
+faviconData.json
+web/assets
+web/mix-manifest.json
+web/dist
+
+# ignore Craft uploaded assets
+web/uploads
+
+package-lock.json

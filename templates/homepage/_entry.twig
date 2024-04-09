@@ -1,0 +1,21 @@
+{######################
+TEMPLATE SETTINGS
+######################}
+
+{# Extends #}
+{% extends "_layout/_main" %}
+
+{# Setting page classes #}
+{% set criticalCss = true %}
+{% set bodyClass = "page--home" %}
+
+{# Import Macros #}
+{% import '_macros/_global' as macros %}
+
+{######################
+END TEMPLATE SETTINGS
+######################}
+
+{% block content %}
+    <h1 class="{{ macros.headingClass("h1") }}">Homepage</h1>
+{% endblock %}
