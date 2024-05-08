@@ -58,7 +58,7 @@ class TwigExtensions extends AbstractExtension
                     
                     $inlineFileManifestPath = $this->craftVite->manifestAsset('src/inline-assets/' . $filename);
 
-                    $inlineFile = Helpers::fetch($inlineFileManifestPath);
+                    $inlineFile = Helpers::fetch('@webroot/' . $inlineFileManifestPath);
 
                     return Template::raw($inlineFile);
                 }
@@ -97,7 +97,7 @@ class TwigExtensions extends AbstractExtension
 
                                 if (isset($entry['file'])) {
                                     $pathToSvg = ViteFileHelper::createUrl($this->craftVite->serverPublic, $entry['file']);
-                                    $svgContent = Helpers::fetch($pathToSvg);
+                                    $svgContent = Helpers::fetch('@webroot' . $pathToSvg);
                                     $svgSprite .= $svgContent;
                                 }
                             }
